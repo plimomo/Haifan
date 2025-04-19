@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>จีบแฟน 💘</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #ffe6f0, #ff99c8);
+      font-family: 'Kanit', sans-serif;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      animation: float 3s ease-in-out infinite;
+      color: #fff;
+      text-shadow: 0 0 15px #ff80b5;
+    }
+
+    .heart {
+      font-size: 60px;
+      animation: pulse 1.5s infinite;
+    }
+
+    .msg {
+      margin: 30px auto;
+      font-size: 1.5em;
+      max-width: 500px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    button {
+      padding: 15px 30px;
+      background: #ff69b4;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    }
+
+    button:hover {
+      background: #ff1493;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .confession {
+      margin-top: 40px;
+      font-size: 1.8em;
+      color: #fff;
+      text-shadow: 0 0 10px #ffb6c1;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+
+    .show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌹 จีบแฟนโหมด ON 🌹</h1>
+  <div class="heart">❤️💖💕</div>
+  <div class="msg">
+    ที่ผ่านมาเราอาจดูเป็นแค่เพื่อนธรรมดา…  
+    แต่จริง ๆ แล้ว... เราชอบเธอมากนะ 💌  
+    และอยากให้เธอรู้ว่า  
+    **“ถ้าใจเธอว่าง… ขอเราไปอยู่ตรงนั้นได้มั้ย?”**
+  </div>
+  <button onclick="confess()">💘 ตอบเราหน่อยได้มั้ย?</button>
+
+  <div id="confessionText" class="confession">
+    🥹 ขอบคุณที่เปิดใจ…  
+    แล้วมาเป็นแฟนกันนะ 💑✨  
+    <br><br>
+    *(เว็บนี้สร้างมาเพื่อเธอคนเดียวเท่านั้นนะ!)*
+  </div>
+
+  <script>
+    function confess() {
+      const text = document.getElementById("confessionText");
+      text.classList.add("show");
+    }
+  </script>
+
+</body>
+</html>
